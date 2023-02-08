@@ -15,4 +15,5 @@ Note: Camel's Scheduler component could be used, but Spring supports clustering 
 Note that Kafka can be easily replace with ActiveMQ, RabbitMQ, SQS or etc.
 
 Requires kafka running locally on the standard port.
+
 Requires java 11+
