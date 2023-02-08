@@ -11,6 +11,7 @@ import lombok.AllArgsConstructor;
 public class CamelSqlAgent {
 	private final ProducerTemplate producerTemplate;
 	
+	//Shedlock annotation will be added here
 	@Scheduled(initialDelay=60000, fixedRate=30000) //milliseconds
 	public void initializeProcess() {
 		producerTemplate.sendBody(CamelSqlRouteBuilder.DIRECT_QUERY, "");
